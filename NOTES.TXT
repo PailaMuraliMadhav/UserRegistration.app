@@ -1,0 +1,24 @@
+install bicrypt
+install jsonwebtoken
+install cloudinary //for image  enhance
+visit cloudinary website and create account
+https://console.cloudinary.com/app/c-3ab85c0d92ae32fa7fff73dee18858/image/getting-started
+
+
+
+export vs export default
+this difference is that export default is used to export a single value or object from a module, 
+while export is used to export multiple values or objects from a module.
+like example-
+export const name = 'murali';
+export const age = 25;
+export const address = 'bangalore';
+export default function sayHello() {
+  console.log('Hello, world!');
+}
+// in the above example, we have exported two values name and age, 
+// and we have also exported a default function sayHello.
+
+
+->> install multer
+npm install multer
