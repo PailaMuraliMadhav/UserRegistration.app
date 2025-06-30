@@ -1,5 +1,6 @@
 import mongoose from "mongoose";
-
+import bcrypt from "bcryptjs";
+import jsonwebtoken from "jsonwebtoken";
 const userSchema = new mongoose.Schema(
   {
     username: {
@@ -38,12 +39,12 @@ const userSchema = new mongoose.Schema(
       type: String,
     },
   },
-  {
-    timestamps: true,
-  }
+}
 );
 
 
+userSchema.pre("save",async function (next){
 
+})
 
 export default User = mongoose.model("User", userSchema);
