@@ -1,7 +1,5 @@
 import express from "express";
-
-
-
+import cors from "cors";
 const app= express();
 
 app.use(express.json());
@@ -20,6 +18,6 @@ import userRoute from "./routes/UserRoutes.js";
 
 //routes declare
 
-app.use("/api/v1/register", userRoute);
+app.use("/api/v1/users/", userRoute);
 
 export default app;
